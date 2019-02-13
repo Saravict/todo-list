@@ -3,48 +3,141 @@
   <head>
     <title>To do list</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <style>
+      .body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans';
+      }
+
+      .container {
+        background-color: #f3f3f3;
+        width: 40%;
+        margin: 30px auto;
+        border-radius: 6px;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .title {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+
+      .form {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .form-field {
+        width: 80%;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid coral;
+        margin-bottom: 10px;
+        outline: none;
+        padding: 10px 0;
+        font-family: 'Noto Sans';
+      }
+
+      .button {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: coral;
+        border: 0;
+        color: #ffffff;
+      }
+
+      .list-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      .list-item {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .list-item-container {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 10px;
+        margin: 0 5px;
+        position: relative;
+      }
+
+      .list-item-coral {
+        color: #FFFFFF;
+        background-color: coral;
+      }
+
+      .list-item-title {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .list-item-text {
+        font-size: 18px;
+        margin: 0;
+      }
+
+      .list-item-close {
+        position: absolute;
+        top: 0;
+        right: 5px;
+      }
+    </style>
   </head>
   
-  <body style="margin: 0; padding: 0; font-family: 'Noto Sans';">
-    <div style="background-color: #CECECE; width: 40%; margin: 30px auto; border-radius: 6px; padding: 20px;">
-      <header style="text-align: center;">
-        <h1 style="font-size: 35px; margin-bottom: 20px;">TO-DO LIST</h1>
-        <form style="width: 100%; box-sizing: border-box;">
-          <input style="width: 100%; background-color: transparent; border: 0; border-bottom: 2px solid coral; margin-bottom: 10px; outline: none; width: 80%; padding: 10px 0; font-family: 'Noto Sans';" placeholder="Title">
-          <textarea style="width: 100%; background-color: transparent; border: 0; border-bottom: 2px solid coral; margin-bottom: 10px; outline: none; width: 80%; padding: 10px 0; font-family: 'Noto Sans';" placeholder="Description"></textarea>
-          <button style="width: 100%; margin: 0 auto; padding: 20px; width: 80%; background-color: coral; border: 0; color: white;">ADD</button>
+  <body class="body">
+    <div class="container">
+      <header class="header">
+        <h1 class="title">TO-DO LIST</h1>
+        <form class="form">
+          <input class="form-field" placeholder="Title">
+          <textarea class="form-field" placeholder="Description"></textarea>
+          <button class="button">ADD</button>
         </form>
       </header>
   
-      <section style="display: flex; align-items: center; flex-direction: column; font-size: 20px; margin-top: 20px;">
-        <h1 style="font-size: 35px; margin-bottom: 20px;">LIST</h1>
+      <section class="list-section">
+        <h1 class="title">LIST</h1>
   
-        <div style="display: flex; width: 100%; align-items: center; margin-bottom: 5px;">
+        <div class="list-item">
           01
-          <div style="background-color: #FFFFFF; width: 100%; padding: 10px; margin: 0 5px; position: relative;">
-            <h2 style="font-size: 20px; margin: 0;">Title</h2>
-            <p style="font-size: 18px; margin: 0;">Text</p>
-            <div style="position: absolute; top: 0; right: 5px;">&times;</div>
+          <div class="list-item-container">
+            <h2 class="list-item-title">Title</h2>
+            <p class="list-item-text">Text</p>
+            <div class="list-item-close">&times;</div>
           </div>
           ↑
           ↓
         </div>
-        <div style="display: flex; width: 100%; align-items: center; margin-bottom: 5px;">
+        <div class="list-item">
           02
-          <div style="background-color: coral; width: 100%; padding: 10px; margin: 0 5px; position: relative;">
-            <h2 style="font-size: 20px; margin: 0; color: #ffffff">Title</h2>
-            <p style="font-size: 18px; margin: 0; color: #ffffff">Text</p>
-            <div style="position: absolute; top: 0; right: 5px;">&times;</div>
+          <div class="list-item-container list-item-coral" >
+            <h2 class="list-item-title">Title</h2>
+            <p class="list-item-text">Text</p>
+            <div class="list-item-close">&times;</div>
           </div>
           ↑
           ↓
         </div>
-        <div style="display: flex; width: 100%; align-items: center; margin-bottom: 5px;">
+        <div class="list-item">
           03
-          <div style="background: #FFFFFF; width: 100%; padding: 10px; margin: 0 5px; position: relative;">
-            <h2 style="font-size: 20px; margin: 0;">Title</h2>
-            <p style="font-size: 18px; margin: 0;">Text</p>
-            <div style="position: absolute; top: 0; right: 5px;">&times;</div>
+          <div class="list-item-container">
+            <h2 class="list-item-title">Title</h2>
+            <p class="list-item-text">Text</p>
+            <div class="list-item-close">&times;</div>
           </div>
           ↑
           ↓
