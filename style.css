@@ -1,0 +1,86 @@
+.body {
+  font-family: 'Noto Sans';
+}
+
+.container {
+  background-color: #f3f3f3;
+  width: 40%;
+  margin: 30px auto;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-field {
+  width: 80%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid coral;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 10px 0;
+  font-family: 'Noto Sans';
+}
+
+.button {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: coral;
+  border: 0;
+  color: #ffffff;
+}
+
+.list-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.list-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.list-item-container {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  margin: 0 5px;
+  position: relative;
+}
+
+.list-item-coral {
+  color: #FFFFFF;
+  background-color: coral;
+}
+
+.list-item-title {
+  font-size: 20px;
+}
+
+.list-item-text {
+  font-size: 18px;
+}
+
+.list-item-close {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
