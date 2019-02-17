@@ -12,8 +12,8 @@
       <header class="header">
         <h1 class="title">TO-DO LIST</h1>
         <form class="form">
-          <input class="form-field" placeholder="Title" id="input">
-          <textarea class="form-field" placeholder="Description" id="textarea"></textarea>
+          <input class="form-field" placeholder="Title" id="input" value="123">
+          <textarea class="form-field" placeholder="Description" id="textarea">1234</textarea>
           <button class="button" id="button">ADD</button>
         </form>
       </header>
@@ -33,7 +33,7 @@
         </div>
         <div class="list-item">
           02
-          <div class="list-item-container list-item-coral" >
+          <div class="list-item-container list-item-coral">
             <h2 class="list-item-title">Title</h2>
             <p class="list-item-text">Text</p>
             <div class="list-item-close">&times;</div>
@@ -55,11 +55,20 @@
     </div>
 
     <script>
+      // add button variable
       var addButton = document.getElementById('button');
-      var input = document.getElementById('input');
-      var textarea = document.getElementById('textarea');
-      var inputValue = input.value;
-      var textareaValue = textarea.value;
+      // function to get form values
+      function getValues(){
+        // form elements
+        var input = document.getElementById('input');
+        var textarea = document.getElementById('textarea');
+        // form elements values
+        var inputValue = input.value;
+        var textareaValue = textarea.value;
+        return inputValue + ' ' + textareaValue;
+      }
+      getValues()
+      
     </script>
   </body>
 </html>
