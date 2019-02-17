@@ -1,6 +1,6 @@
 
-// add button variable
-var addButton = document.getElementById('button');
+// add form variable
+var form = document.getElementById('form');
 // function to get form values
 function getValues(event){
   event.preventDefault();
@@ -13,5 +13,5 @@ function getValues(event){
   return inputValue + ' ' + textareaValue;
 }
 
-addButton.addEventListener('click', getValues)
+form.addEventListener('submit', getValues);
 
